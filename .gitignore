@@ -1,0 +1,7 @@
+#ignored files
+.classpath
+.project
+.settings/
+target/
+dependency-reduced-pom.xml
+.springBeans
