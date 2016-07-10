@@ -12,7 +12,7 @@
 
 
 	<!-- =========================Project Details=========================== -->
-	<description>AMQP Consumer - Demo</description>
+	<description>AMQP Producer - Demo</description>
 	<groupId>ws.cogito.magic</groupId>
 	<artifactId>amqp-producer</artifactId>
 	<version>1.0.0</version>
