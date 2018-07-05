@@ -75,16 +75,10 @@ public class PriorityMessageListener implements MessageListener {
 	
 		if (message.getMessageProperties().getCorrelationId() != null) {
 			
-			try {
+			String correlationId = message.getMessageProperties().
+					getCorrelationId();
 			
-				String correlationId = new String(message.getMessageProperties().
-						getCorrelationId(), "UTF-8");
-				
-				logger.info("Message Correlation ID: " + correlationId);
-			
-			} catch (UnsupportedEncodingException e) {
-				logger.error("Unable to process correlation identifer \n" + e.getMessage());
-			}
+			logger.info("Message Correlation ID: " + correlationId);
 			
 			//add the correlation to the reply message properties
 			properties.setCorrelationId(message.getMessageProperties().getCorrelationId());

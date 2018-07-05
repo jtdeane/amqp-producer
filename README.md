@@ -2,7 +2,7 @@ amqp-producer
 =======================
 Demo asynchronous request-reply via RabbitMQ (AMQP)
 
-Built with Java 8+, Spring-Boot (1.5.6.RELEASE)
+Built with Java 8+, Spring-Boot (2.0.3.RELEASE)
 
 ##Spring
 
@@ -21,6 +21,10 @@ Built with Java 8+, Spring-Boot (1.5.6.RELEASE)
 * Run
 
 `mvn spring-boot:run -Drun.arguments="-Xmx256m,-Xms128m"`
+
+Check health
+
+`http://localhost:9001/actuator/info`
 
 ##Docker
 
